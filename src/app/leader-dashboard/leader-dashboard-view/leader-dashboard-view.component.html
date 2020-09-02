@@ -1,0 +1,22 @@
+<div >
+  
+     
+          <table>
+             <tbody>
+                 <tr *ngFor="let member of members">
+                     <td>
+                        <span >{{member.name}} </span> 
+                     </td>
+                     <td class="actionIcon">
+                        <app-leader-dashboard-actions    (addPoints)="addPoints(member)" (removePoints)="removePoints(member)" [member]="member"></app-leader-dashboard-actions>
+                     </td>
+                     <td>
+                        <span >{{member.points}} Points </span> 
+                     </td>
+                 </tr>
+             </tbody>
+          </table>
+        
+    
+  
+  </div>
